@@ -376,7 +376,7 @@ class NewsRadarMonitor:
             # World / general news sources
             if cfg.get("world_enabled", True):
                 # Google News RSS for custom topics
-                topics = cfg.get("google_news_topics", ["Trump", "Ukraine"])
+                topics = cfg.get("google_news_topics", ["AI", "Technology"])
                 for topic in topics:
                     safe_name = f"google_{topic.lower().replace(' ', '_')}"
                     tasks.append(

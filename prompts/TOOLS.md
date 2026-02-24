@@ -200,7 +200,7 @@ web_search используй ТОЛЬКО когда нужна свежая н
 | «добавь подписку Claude $20» | subscription_add name=Claude Pro price=20 |
 | «удали подписку Spotify» | subscription_remove name=Spotify |
 | «где посылка 2045...» | novaposhta action=track ttn=2045... |
-| «отделения в Кривом Роге» | novaposhta action=warehouses city=Кривий Ріг |
+| «отделения в Києві» | novaposhta action=warehouses city=Київ |
 | «проверь почту» | email_inbox |
 | «найди информацию о X» | web_search query=X |
 | «создай PDF» | file_pdf content="..." |
@@ -256,7 +256,7 @@ web_search используй ТОЛЬКО когда нужна свежая н
 | «об'єднай 2 PDF» | pdf_tool action=merge file_path=a.pdf files=b.pdf |
 | «витягни сторінки 3-5» | pdf_tool action=split file_path=... pages=3-5 |
 | «сторінку в картинку» | pdf_tool action=to_image file_path=... pages=1 |
-| «найди мне квартиру до $30k» | goal action=create description="Квартира 2к в Кривому Розі до $30k" criteria="Ціна до $30000, 2 кімнати, не перший/останній поверх" interval_minutes=60 |
+| «найди мне квартиру до $50k» | goal action=create description="Квартира 2к в Києві до $50k" criteria="Ціна до $50000, 2 кімнати, не перший/останній поверх" interval_minutes=60 |
 | «мониторь BTC до $90k» | goal action=create description="BTC drop to $90k" criteria="BTC price below $90,000" interval_minutes=30 |
 | «мои цели» | goal action=list |
 | «проверь цель abc123» | goal action=check goal_id=abc123 |

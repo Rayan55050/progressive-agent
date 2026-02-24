@@ -37,7 +37,7 @@
 - **MonobankMonitor** — транзакции, каждые 3 мин, пуш на новые списания/зачисления
 - **SubscriptionMonitor** — подписки, daily check в 09:00, напоминания за 3/1 день + при продлении
 - **NewsRadarMonitor** — крипто + AI новости каждые 4ч, 7 источников, LLM-фильтрация, дайджест в Telegram
-- **TwitchMonitor** — Twitch Helix API, каждые 3 мин, 12 стримеров, пуш при старте стрима
+- **TwitchMonitor** — Twitch Helix API, каждые 3 мин, пуш при старте стрима из списка
 - **YouTubeMonitor** — YouTube Data API v3, каждые 30 мин, пуш при новом видео на каналах
 - **MorningBriefingMonitor** — ежедневный дайджест в 08:00 (погода, BTC+FnG, курс UAH, email, подписки, задачи) — zero LLM tokens
 
@@ -79,7 +79,7 @@
 
 1. ~~Subscription monitor~~ — DONE (add/list/remove + daily reminders)
 2. ~~NewsRadar monitor~~ — DONE (крипто + AI, 7 источников, LLM-фильтр, каждые 4ч)
-3. ~~Twitch monitor~~ — DONE (Helix API, 12 стримеров, каждые 3 мин + twitch_status тул)
+3. ~~Twitch monitor~~ — DONE (Helix API, каждые 3 мин + twitch_status тул)
 4. ~~YouTube monitor~~ — DONE (Data API v3, youtube_search + youtube_info + OAuth подписки/лайки, авто-синк каналов, мониторинг каждые 30 мин)
 
 ## Тесты

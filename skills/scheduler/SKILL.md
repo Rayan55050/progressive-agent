@@ -38,7 +38,7 @@ Show all active reminders.
 Remove a reminder by ID (get IDs from `schedule_list`).
 
 ## Rules
-1. Convert user's natural language time to ISO format. User's timezone is Europe/Kiev (UTC+2 winter, UTC+3 summer).
+1. Convert user's natural language time to ISO format. User's timezone is set in `config/agent.toml` → `[scheduler]` → `timezone`.
 2. "через 2 часа" → calculate current time + 2 hours → ISO datetime
 3. "завтра в 9" → tomorrow at 09:00:00 → ISO datetime
 4. "каждый день в 8 утра" → use `repeat: daily` with `run_at` set to next 08:00

@@ -1,6 +1,6 @@
 # Architecture
 
-Progressive Agent is a personal AI agent with a Telegram interface. It is inspired by [OpenClaw](https://github.com/) (skills as Markdown, SOUL system) and [ZeroClaw](https://github.com/) (Builder pattern, dual dispatcher, reliable wrapper).
+Progressive Agent is a personal AI agent with a Telegram interface. It is inspired by OpenClaw (skills as Markdown, SOUL system) and ZeroClaw (Builder pattern, dual dispatcher, reliable wrapper).
 
 This document describes the internal architecture in full detail.
 
@@ -726,7 +726,7 @@ provider = "tavily"
 max_results = 5
 
 [weather]
-default_city = "Kharkiv"
+default_city = ""  # auto-detected from IP or set during onboarding
 
 [scheduler]
 timezone = "Europe/Kiev"

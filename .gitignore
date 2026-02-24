@@ -69,3 +69,10 @@ _*.txt
 # === Node modules (if CLIProxyAPI is installed via npm) ===
 node_modules/
 package-lock.json
+
+# === Portable Node.js (auto-downloaded by installer) ===
+_node/
+_temp/
+
+# === Windows reserved names ===
+nul

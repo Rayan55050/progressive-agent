@@ -4,10 +4,11 @@
 Персональный AI-агент для Telegram. Open-source проект, вдохновлённый OpenClaw и ZeroClaw.
 Open-source проект от Progressive AI Community.
 
-## Текущая фаза: v1.0 — Open Source Release
+## Текущая фаза: v1.0.0 — Open Source Release
 - **Роадмап:** `ROADMAP.md` — план развития проекта
 - **Архитектура:** `ARCHITECTURE.md` — компоненты, интерфейсы, потоки данных
 - **API:** `API_DOCUMENTATION.md` — как создать свой тул или скилл
+- **Статус:** `docs/STATUS.md` — что работает, текущий прогресс
 
 ## Стек
 - Python 3.11+, uv (пакетный менеджер)
@@ -144,13 +145,14 @@ TAVILY_API_KEY=tvly-...
 ```toml
 [agent]
 name = "Progressive Agent"
-default_model = "claude-sonnet-4-5-20250929"
-max_tokens = 4096
+default_model = "claude-opus-4-6"
+max_tokens = 16384
 
 [telegram]
-allowed_users = [123456789]  # Telegram user IDs
+# Auto-detected on first /start — leave empty for auto-setup
+allowed_users = []
 
 [memory]
 db_path = "data/memory.db"
-embedding_model = "text-embedding-3-small"
+embedding_model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 ```

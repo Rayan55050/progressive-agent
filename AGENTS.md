@@ -1,7 +1,7 @@
 # Agent Learnings
 
-Этот файл автоматически обновляется агентом. Каждый урок — результат реальной ошибки или открытия.
-Инжектится в системный промпт при каждом запуске. Агент учится на своих ошибках.
+This file is automatically updated by the agent. Each lesson is the result of a real mistake or discovery.
+Injected into the system prompt on every request. The agent learns from its own errors.
 
 ## Tool Usage Lessons
 <!-- Lessons about how to use tools effectively -->

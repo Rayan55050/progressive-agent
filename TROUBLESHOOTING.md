@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Common issues and their solutions. If your problem is not listed here, please [open a GitHub Issue](https://github.com/progressiveai/progressive-agent/issues).
+Common issues and their solutions. If your problem is not listed here, please [open a GitHub Issue](https://github.com/progressive-ai-community/progressive-agent/issues).
 
 ---
 

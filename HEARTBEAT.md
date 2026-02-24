@@ -1,7 +1,8 @@
 # Heartbeat Tasks
-# Эти задачи выполняются автоматически каждые 30 минут.
-# Агент использует ВСЕ свои тулы для выполнения.
-# Добавляй/удаляй задачи — изменения применятся при следующем запуске.
 
-- Проверь свободное место на диске C:. Если меньше 10 ГБ — алертни.
-- Проверь, работает ли интернет (пингани google.com). Если нет — алертни.
+# These tasks run automatically every 30 minutes (configurable in agent.toml).
+# The agent uses ALL its tools to complete them.
+# Add/remove tasks — changes apply on next heartbeat cycle.
+
+- Check free disk space on the main drive. Alert if less than 10 GB.
+- Check internet connectivity (ping google.com). Alert if offline.
