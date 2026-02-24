@@ -1,0 +1,71 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# === Environment ===
+.env
+.env.local
+.env.production
+
+# === Data (runtime, not committed) ===
+data/
+*.db
+*.db-journal
+*.db-wal
+
+# === Logs ===
+*.log
+bot_output.log
+bot_error.log
+bot_test.log
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Temp files ===
+temp_*/
+*.tmp
+*.bak
+
+# === CLIProxyAPI (binary, not committed) ===
+CLIProxyAPI/
+
+# === Gmail OAuth tokens ===
+data/gmail_token.json
+config/gmail_credentials.json
+
+# === YouTube OAuth tokens ===
+data/youtube_token.json
+config/youtube_credentials.json
+
+# === Avatar (user-specific) ===
+data/avatar.png
+
+# === Test artifacts ===
+.pytest_cache/
+htmlcov/
+.coverage
+
+# === Debug/temp scripts (underscore prefix) ===
+_*.ps1
+_*.py
+_*.txt
+
+# === Node modules (if CLIProxyAPI is installed via npm) ===
+node_modules/
+package-lock.json

@@ -1,0 +1,103 @@
+[project]
+name = "progressive-agent"
+version = "0.1.0"
+description = "Personal AI agent with Telegram interface. Inspired by OpenClaw & ZeroClaw."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [
+    { name = "Progressive AI Community" },
+]
+keywords = ["ai-agent", "telegram-bot", "personal-assistant", "llm"]
+
+dependencies = [
+    # LLM
+    "anthropic>=0.40.0",
+    "openai>=1.50.0",
+    "mistralai>=1.2.0",
+    # Telegram
+    "aiogram>=3.13.0",
+    # Database & Memory
+    "sqlite-vec>=0.1.6",
+    # Search
+    "tavily-python>=0.5.0",
+    # Config
+    "tomli>=2.0.0; python_version < '3.12'",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.0",
+    # Async
+    "aiohttp>=3.10.0",
+    "aiofiles>=24.1.0",
+    # Scheduler
+    "apscheduler>=3.10.0",
+    # Speech-to-Text (local, no API key)
+    "faster-whisper>=1.0.0",
+    # Music recognition (Shazam, free, no API key)
+    "shazamio>=0.7.0",
+    # Background removal (local ONNX model, no API key)
+    "rembg[cpu]>=2.0.0",
+    # OCR — text extraction from images (ONNX Runtime, no PyTorch)
+    "rapidocr-onnxruntime>=1.4.0",
+    # Local embeddings (ONNX Runtime, no torch)
+    "fastembed>=0.7.0",
+    # Gmail API
+    "google-api-python-client>=2.100.0",
+    "google-auth-oauthlib>=1.2.0",
+    "google-auth-httplib2>=0.2.0",
+    # PDF generation + reading
+    "fpdf2>=2.8.0",
+    "pypdf>=4.0.0",
+    # Document parsing (Word, Excel)
+    "python-docx>=1.1.0",
+    "openpyxl>=3.1.0",
+    # YAML parsing (skill frontmatter)
+    "pyyaml>=6.0",
+    # NewsRadar (RSS + HTML scraping)
+    "feedparser>=6.0.0",
+    "beautifulsoup4>=4.12.0",
+    # YouTube transcript (subtitles for video summarization)
+    "youtube-transcript-api>=1.0.0",
+    # TTS (free Microsoft TTS for voice/video circles)
+    "edge-tts>=6.1.0",
+    # QR Code generation
+    "qrcode[pil]>=7.4.0",
+    # Clipboard access
+    "pyperclip>=1.8.0",
+    # Screenshots (cross-platform)
+    "mss>=9.0.0",
+    # System monitoring (CPU, RAM, disk, processes)
+    "psutil>=5.9.0",
+    # Audio capture (system loopback via Stereo Mix)
+    "sounddevice>=0.4.0",
+    "soundfile>=0.12.0",
+    # Media download (YouTube, Twitter, 1000+ sites)
+    "yt-dlp>=2024.1.0",
+    # Speed test (Ookla servers)
+    "speedtest-cli>=2.1.0",
+    # EXIF reader (GPS reverse geocoding)
+    "geopy>=2.4.0",
+    # CSV/Excel analyst
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+    "openpyxl>=3.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100

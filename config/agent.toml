@@ -1,0 +1,133 @@
+[agent]
+name = "Progressive Agent"
+default_model = "claude-opus-4-6"
+fallback_model = "claude-sonnet-4-5-20250929"
+max_tokens = 16384
+temperature = 0.7
+
+[telegram]
+# Auto-detected on first /start — leave empty for auto-setup
+allowed_users = []
+# Размер чанка при стриминге ответов (символов)
+streaming_chunk_size = 50
+# Задержка между чанками (мс)
+streaming_delay_ms = 100
+
+[memory]
+db_path = "data/memory.db"
+embedding_model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+embedding_dimensions = 384
+max_context_memories = 10
+# Коэффициент временного затухания для ранжирования воспоминаний
+temporal_decay_lambda = 0.01
+
+[costs]
+# Дневной лимит расходов на API (USD)
+daily_limit_usd = 5.0
+# Месячный лимит расходов на API (USD)
+monthly_limit_usd = 50.0
+# Порог предупреждения (80% от лимита)
+warning_threshold = 0.8
+
+[search]
+provider = "tavily"
+max_results = 5
+
+[email]
+# Путь к OAuth credentials файлу (скачивается из Google Cloud Console)
+credentials_path = "config/gmail_credentials.json"
+# Путь к сохранённому токену (создаётся автоматически после первой авторизации)
+token_path = "data/gmail_token.json"
+# Интервал проверки новых писем (минуты)
+check_interval_minutes = 1
+# Максимум писем при листинге
+max_results = 20
+
+[crypto]
+# Интервал проверки курса BTC (минуты)
+check_interval_minutes = 2
+# Порог движения для уведомления (USD)
+threshold_usd = 500.0
+
+[monobank]
+# Интервал проверки новых транзакций (минуты)
+check_interval_minutes = 3
+# Уведомлять о новых транзакциях
+notify_transactions = true
+
+[subscription]
+# Час ежедневной проверки подписок (локальное время)
+check_hour = 9
+
+[obsidian]
+# Path to your Obsidian vault (change to your own)
+vault_path = ""
+daily_folder = "01 Daily"
+inbox_folder = "00 Inbox"
+templates_folder = "Templates"
+
+[twitch]
+# Интервал проверки стримов (минуты)
+check_interval_minutes = 3
+# Список стримеров для мониторинга (логины Twitch)
+# Example: streamers = ["shroud", "pokimane", "xqc"]
+streamers = []
+
+[youtube]
+# Интервал проверки новых видео (минуты)
+check_interval_minutes = 30
+# YouTube каналы для мониторинга (channel ID или @handle)
+# Найти channel ID: зайди на канал → About → Share → Copy channel ID
+channels = []
+
+[news_radar]
+# Интервал между дайджестами (часы)
+check_interval_hours = 4
+# Каналы
+crypto_enabled = true
+ai_enabled = true
+world_enabled = true
+# Google News RSS темы для мониторинга
+google_news_topics = ["AI", "Technology"]
+reddit_worldnews_rss = true
+# Лимиты
+max_articles_per_source = 10
+max_articles_total = 30
+
+[files]
+# Разрешённые корневые директории для работы с файлами
+# Auto-set to user's home directory
+allowed_roots = []
+# Максимальный размер файла для чтения (MB)
+max_file_size_mb = 1.0
+# Максимум результатов при поиске
+max_results = 20
+
+[weather]
+# Город по умолчанию для погоды
+# Set during setup or auto-detected
+default_city = ""
+
+[tts]
+# Голос по умолчанию
+# OpenAI (if OPENAI_API_KEY set): onyx, echo, fable, alloy, nova, shimmer
+# edge-tts multilingual (best free): brian, andrew, ava, emma
+# edge-tts standard: ru-male, ru-female, en-male, en-female, uk-male, uk-female
+default_voice = "brian"
+# Скорость речи (1.0 = нормально, 1.35 = идеально, 1.5 = ускоренно, 2.0 = быстро)
+speed = 1.35
+# Путь к аватару для видео-кружочков (пусто = data/avatar.png)
+avatar_path = ""
+
+[morning_briefing]
+# Утренний брифинг: погода, почта, крипта, задачи
+enabled = true
+hour = 8
+minute = 0
+
+[heartbeat]
+# Интервал выполнения задач из HEARTBEAT.md (минуты)
+interval_minutes = 30
+
+[scheduler]
+timezone = "Europe/Kiev"

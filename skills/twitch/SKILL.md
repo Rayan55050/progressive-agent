@@ -1,0 +1,48 @@
+---
+name: twitch
+description: "Twitch: статус стримеров, кто онлайн"
+tools:
+  - twitch_status
+  - web_search
+trigger_keywords:
+  - twitch
+  - стрим
+  - стример
+  - кто стримит
+  - онлайн ли
+  - кто в эфире
+---
+
+# Twitch
+
+Мониторинг стримеров через Twitch Helix API.
+
+## Фоновый мониторинг
+
+TwitchMonitor проверяет стримеров каждые 3 минуты.
+Когда кто-то начинает стрим — пуш в Telegram с названием стрима, игрой, количеством зрителей и ссылкой.
+
+## Как использовать
+
+- "Кто сейчас стримит?" → `twitch_status` — покажет всех онлайн из отслеживаемого списка
+- "Стримит ли raythis?" → `twitch_status`, отфильтруй по нику
+- "Кто онлайн из стримеров?" → `twitch_status`
+
+## Формат ответа
+
+Если кто-то онлайн:
+```
+🟣 *NickName* — Game Name
+📝 Stream Title
+👥 1,234 зрителей
+🔗 twitch.tv/nickname
+```
+
+Если никто не онлайн:
+```
+Никто из 11 отслеживаемых стримеров сейчас не в эфире.
+```
+
+## Отслеживаемые стримеры
+
+raythis, lenagol0vach, vengeful7, ussrkhal, voodoosh, invest_zone, solo, rastpentagon, mr__insider, hurma, damagetryapk

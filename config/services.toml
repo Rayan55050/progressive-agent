@@ -1,0 +1,88 @@
+# All services used by Progressive Agent
+# API-ключи хранятся в .env, здесь только метаданные
+
+[[services]]
+name = "Claude Max Subscription"
+url = "https://claude.ai"
+api_key_env = "CLAUDE_PROXY_URL"
+description = "Основной LLM — через подписку Max ($100/$200), не API"
+status = "active"
+notes = "Требует запущенный CLI proxy (npx claude-max-api-proxy)"
+
+[[services]]
+name = "Anthropic API (fallback)"
+url = "https://console.anthropic.com"
+api_key_env = "ANTHROPIC_API_KEY"
+description = "Запасной вариант — pay-per-token API"
+status = "inactive"
+notes = "Используется только если прокси недоступен"
+
+[[services]]
+name = "Telegram Bot"
+url = "https://t.me/BotFather"
+api_key_env = "TELEGRAM_BOT_TOKEN"
+description = "Основной канал общения"
+status = "active"
+
+[[services]]
+name = "Tavily"
+url = "https://tavily.com"
+api_key_env = "TAVILY_API_KEY"
+description = "Основной веб-поиск (структурированные результаты)"
+status = "active"
+
+[[services]]
+name = "SerpApi"
+url = "https://serpapi.com"
+api_key_env = "SERPAPI_API_KEY"
+description = "Google/Bing поисковая выдача"
+status = "active"
+
+[[services]]
+name = "Jina"
+url = "https://jina.ai"
+api_key_env = "JINA_API_KEY"
+description = "Reader API (чтение веб-страниц) + Search API"
+status = "active"
+
+[[services]]
+name = "Firecrawl"
+url = "https://firecrawl.dev"
+api_key_env = "FIRECRAWL_API_KEY"
+description = "Веб-скрапинг и глубокий crawl"
+status = "active"
+
+[[services]]
+name = "OpenAI"
+url = "https://platform.openai.com"
+api_key_env = "OPENAI_API_KEY"
+description = "Embeddings (text-embedding-3-small), Whisper STT, DALL-E 3"
+status = "active"
+
+[[services]]
+name = "Supabase"
+url = "https://supabase.com"
+api_key_env = "SUPABASE_API_KEY"
+description = "База данных, аутентификация, хранилище"
+status = "inactive"
+
+[[services]]
+name = "Vercel"
+url = "https://vercel.com"
+api_key_env = "VERCEL_TOKEN"
+description = "Деплой фронтенда и serverless функций"
+status = "inactive"
+
+[[services]]
+name = "GitHub"
+url = "https://github.com"
+api_key_env = "GITHUB_TOKEN"
+description = "Хранение кода, CI/CD, GitHub API"
+status = "inactive"
+
+[[services]]
+name = "Webshare Proxy"
+url = "https://www.webshare.io"
+api_key_env = "WEBSHARE_API_KEY"
+description = "Прокси для веб-скрапинга"
+status = "inactive"
